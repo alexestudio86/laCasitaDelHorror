@@ -1,0 +1,5 @@
+/* MENU CHECKED */
+
+#menu-bar:checked ~ div{
+  display:block!important;
+}
