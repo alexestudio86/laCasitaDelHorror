@@ -1,0 +1,158 @@
+/* STYLE COMMENTS DESIGN */
+
+ol#top-ra {
+  background:         #fff;
+  padding:			      0!important;
+  margin:				      0!important;
+  list-style-type:	  none;
+}
+div.comment-thread > ol#top-ra > li.comment {
+  background:			    #f1f1f1;
+  border-bottom:		  1px solid #dee2e6!important;
+  display:			      -ms-flexbox;
+  display:			      flex;
+  -ms-flex-wrap:		  wrap;
+  flex-wrap:			    wrap;
+  margin:				      0.5em 0.3em;
+}
+
+/* Left */
+div.comment-thread > ol#top-ra > li.comment > div.avatar-image-container {
+  -ms-flex:			      0 0 10%;
+  flex:				        0 0 10%;
+  max-width:			    25%;
+  padding:			      0.5em;
+}
+li.comment div.avatar-image-container img{
+  width:				      100%;
+  border-radius:		  100%!important;
+}
+
+/* Right */
+div.comment-thread > ol#top-ra > li.comment > div.comment-block {
+  -ms-flex:			      0 0 90%;
+  flex:				        0 0 90%;
+  max-width:			    90%;
+  padding:			      0.5em;
+}
+div.comment-thread > ol#top-ra > li.comment > div.comment-block div {
+  display:            -ms-flexbox!important;
+  display:			      flex!important;
+  -ms-flex-direction: column-reverse!important;
+  flex-direction:     column-reverse!important;
+}
+
+/* Comment author */
+ol#top-ra > li > div > div > cite > a {
+  font-style:			    normal;
+  color:				      #000;
+  text-decoration:	  none;
+  font-weight:		    bold;
+}
+
+/* Comment date */
+ol#top-ra > li > div > div > span {
+  text-align:		      right!important;
+}
+ol#top-ra > li > div > div > span > a {
+  font-style:			    normal;
+  color:				      #6c757d!important;
+  text-decoration:	  none;
+  font-weight:		    normal;
+}
+
+/* Response and delete */
+ol#top-ra > li > div > span.comment-actions {
+  display:			      -ms-flexbox;
+  display:		    	  flex;
+  -ms-flex-wrap:		  wrap;
+  flex-wrap:			    wrap;
+  text-align:			    center;
+}
+ol#top-ra > li > div > span > a.comment-reply {
+  -ms-flex:			      0 0 50%;
+  flex:				        0 0 50%;
+  max-width:			    50%;
+}
+ol#top-ra > li > div > span > span.item-control {
+  -ms-flex:			      0 0 50%;
+  flex:				        0 0 50%;
+  max-width:			    50%;
+}
+
+
+/* COMMENTS REPLY */
+
+/* Hidden replies */
+div.comment-replies > div > span > span > a {
+  display:			      none;
+}
+div.comment-replies > div > ol > div.continue > a {
+  display:			      none;
+}
+
+/* Formating replys */
+div.comment-replies {
+  width:				      100%;
+}
+div.comment-replies div ol {
+  list-style-type:	  none;
+  padding:			      0;
+}
+div.comment-replies > div > ol > div > li.comment {
+  background:			    #ddd;
+  display:			      -ms-flexbox;
+  display:			      flex;
+  -ms-flex-wrap:		  wrap;
+  flex-wrap:			    wrap;
+  -ms-flex-direction:	row-reverse!important;
+  flex-direction:		  row-reverse!important;
+  margin: 			      0.1em 0 0 0;
+}
+
+/* Left */
+div.comment-replies > div > ol > div > li.comment > div.avatar-image-container {
+  -ms-flex:			      0 0 10%;
+  flex:				        0 0 10%;
+  max-width:			    10%;
+  padding:			      0.5em;
+}
+
+/* Right */
+div.comment-replies > div > ol > div > li.comment > div.comment-block {
+  -ms-flex:			      0 0 90%;
+  flex:				        0 0 90%;
+  max-width:			    90%;
+  padding:			      0.5em;
+}
+div.comment-replies > div > ol > div > li > div > div.comment-header {
+  display:			      -ms-flexbox;
+  display:			      flex;
+  -ms-flex-wrap:		  wrap;
+  flex-wrap:			    wrap;
+  -ms-flex-direction:	column-reverse;
+  flex-direction:		  column-reverse;
+}
+div.comment-replies > div > ol > div > li > div > div.comment-header > cite > a {
+  font-style:			    normal;
+  color:				      #000;
+  text-decoration:	  none;
+  font-weight:		    bold;
+}
+div.comment-replies > div > ol > div > li > div > div.comment-header > span.datetime > a {
+  font-style:			    normal;
+  color:				      #6c757d!important;
+  text-decoration:	  none;
+  font-weight:		    normal;
+}
+div.comment-replies > div > ol > div > li > div > span.comment-actions {
+  display:			      -ms-flexbox;
+  display:			      flex;
+  -ms-flex-pack:		  center;
+  justify-content:	  center;
+}
+
+/* Comment box full */
+div.comment-replybox-single {
+  width:              100%;
+}
